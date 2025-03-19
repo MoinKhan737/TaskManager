@@ -1,50 +1,50 @@
-# Welcome to your Expo app 👋
+# Setup Instructions for Full Stack Task Manager App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Prerequisites
+Before setting up the project, ensure you have the following installed:
+- Node.js and npm
+- MongoDB (local or cloud)
+- Expo CLI
 
-## Get started
-
-1. Install dependencies
-
-   ```bash
+## Backend Setup
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/moinkhan737/TaskManagerBackend.git
+   cd task-manager-backend
+   ```
+2. Install dependencies:
+   ```sh
    npm install
    ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
+3. Create a `.env` file and add the following environment variables:
+   ```sh
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_secret_key
+   ```
+4. Start the backend server:
+   ```sh
+   npm run dev
    ```
 
-In the output, you'll find options to open the app in a
+## Frontend Setup
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/moinkhan737/TaskManager.git
+   cd task-manager-frontend 
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Update the API base URL in the frontend code to match your backend deployment.
+4. Start the Expo development server:
+   ```sh
+   npx expo start
+   ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Usage
+1. Sign up or log in.
+2. Create, edit, and manage tasks.
+3. Logout securely.
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
